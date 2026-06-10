@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#080808"/>
+      <stop offset="1" stop-color="#151515"/>
+    </linearGradient>
+    <linearGradient id="waveA" x1="230" y1="680" x2="1400" y2="560" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#B0B0B0"/>
+      <stop offset="0.52" stop-color="#F1F1F1"/>
+      <stop offset="1" stop-color="#8E8E8E"/>
+    </linearGradient>
+    <linearGradient id="waveB" x1="240" y1="740" x2="1412" y2="620" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#717171"/>
+      <stop offset="0.52" stop-color="#C6C6C6"/>
+      <stop offset="1" stop-color="#7B7B7B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="120" y="120" width="1360" height="760" rx="24" fill="#111111" stroke="white" stroke-opacity="0.16"/>
+
+  <g opacity="0.46" stroke="white" stroke-opacity="0.14" stroke-width="1.2">
+    <rect x="210" y="200" width="252" height="182" rx="12"/>
+    <rect x="490" y="200" width="252" height="182" rx="12"/>
+    <rect x="770" y="200" width="252" height="182" rx="12"/>
+    <rect x="1050" y="200" width="252" height="182" rx="12"/>
+    <rect x="210" y="408" width="1092" height="380" rx="14"/>
+  </g>
+
+  <path d="M230 678C332 640 390 704 492 662C584 624 640 546 732 564C842 584 920 722 1016 698C1112 674 1172 542 1266 520C1328 506 1372 534 1400 566" stroke="url(#waveA)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M240 718C332 696 404 734 504 702C598 672 658 588 756 600C854 612 930 746 1028 734C1138 722 1192 598 1286 572C1340 558 1388 582 1412 610" stroke="url(#waveB)" stroke-width="5" stroke-linecap="round"/>
+
+  <circle cx="390" cy="290" r="42" fill="#D3D3D3" fill-opacity="0.22"/>
+  <circle cx="646" cy="290" r="42" fill="#B8B8B8" fill-opacity="0.22"/>
+  <circle cx="902" cy="290" r="42" fill="#E5E5E5" fill-opacity="0.2"/>
+  <circle cx="1158" cy="290" r="42" fill="#A1A1A1" fill-opacity="0.2"/>
+
+  <rect x="0" y="0" width="1600" height="1000" fill="black" fill-opacity="0.09"/>
+</svg>

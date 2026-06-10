@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod:*)",
+      "Bash(lsof:*)",
+      "Bash(curl:*)",
+      "Bash(grep:*)",
+      "Bash(tree:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git push:*)",
+      "Bash(perl -i -pe:*)",
+      "Bash(sed:*)"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#090909"/>
+      <stop offset="1" stop-color="#161616"/>
+    </linearGradient>
+    <radialGradient id="leftCore" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(610 510) rotate(90) scale(280)">
+      <stop offset="0" stop-color="#F5F5F5" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#F5F5F5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rightCore" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 510) rotate(90) scale(280)">
+      <stop offset="0" stop-color="#D3D3D3" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#D3D3D3" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <rect x="100" y="110" width="1400" height="780" rx="24" fill="#111111" stroke="white" stroke-opacity="0.16"/>
+
+  <circle cx="610" cy="510" r="250" fill="url(#leftCore)"/>
+  <circle cx="980" cy="510" r="250" fill="url(#rightCore)"/>
+
+  <g opacity="0.64" stroke="white" stroke-opacity="0.35" stroke-width="1.5">
+    <circle cx="610" cy="510" r="198"/>
+    <circle cx="980" cy="510" r="198"/>
+    <path d="M744 510H846"/>
+  </g>
+
+  <g stroke="#DDDDDD" stroke-opacity="0.62" stroke-width="1.6" fill="#DDDDDD" fill-opacity="0.64">
+    <path d="M390 380L506 450"/>
+    <path d="M390 642L506 570"/>
+    <path d="M1200 380L1084 450"/>
+    <path d="M1200 642L1084 570"/>
+    <circle cx="390" cy="380" r="8"/>
+    <circle cx="390" cy="642" r="8"/>
+    <circle cx="1200" cy="380" r="8"/>
+    <circle cx="1200" cy="642" r="8"/>
+  </g>
+
+  <g opacity="0.42" stroke="white" stroke-opacity="0.18" stroke-width="1">
+    <rect x="200" y="200" width="1200" height="620" rx="16"/>
+    <path d="M800 200V820"/>
+    <path d="M200 510H1400"/>
+  </g>
+
+  <rect x="0" y="0" width="1600" height="1000" fill="black" fill-opacity="0.08"/>
+</svg>

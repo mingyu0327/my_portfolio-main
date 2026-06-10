@@ -1,0 +1,57 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1920" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070707"/>
+      <stop offset="1" stop-color="#151515"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(930 560) rotate(90) scale(300 420)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.72"/>
+      <stop offset="0.4" stop-color="#CFCFCF" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#0D0D0D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="790" y1="300" x2="1130" y2="840" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2F2F2" stop-opacity="0.26"/>
+      <stop offset="0.52" stop-color="#BDBDBD" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.18"/>
+    </linearGradient>
+    <filter id="soft" x="0" y="0" width="1920" height="1080" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+
+  <g opacity="0.22">
+    <line x1="140" y1="172" x2="1780" y2="172" stroke="#FFFFFF" stroke-opacity="0.26"/>
+    <line x1="140" y1="540" x2="1780" y2="540" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <line x1="140" y1="908" x2="1780" y2="908" stroke="#FFFFFF" stroke-opacity="0.2"/>
+    <line x1="384" y1="104" x2="384" y2="976" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <line x1="960" y1="104" x2="960" y2="976" stroke="#FFFFFF" stroke-opacity="0.2"/>
+    <line x1="1536" y1="104" x2="1536" y2="976" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  </g>
+
+  <rect x="780" y="220" width="360" height="640" rx="18" fill="#0B0B0B" stroke="#FFFFFF" stroke-opacity="0.32"/>
+  <rect x="814" y="254" width="292" height="572" rx="12" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity="0.26"/>
+
+  <rect x="906" y="366" width="108" height="264" rx="54" fill="#0A0A0A" stroke="#FFFFFF" stroke-opacity="0.42"/>
+  <circle cx="960" cy="498" r="74" fill="url(#core)"/>
+  <circle cx="960" cy="498" r="104" stroke="#FFFFFF" stroke-opacity="0.16"/>
+  <circle cx="960" cy="498" r="154" stroke="#FFFFFF" stroke-opacity="0.09"/>
+
+  <g filter="url(#soft)">
+    <ellipse cx="960" cy="838" rx="230" ry="38" fill="#FFFFFF" fill-opacity="0.22"/>
+  </g>
+
+  <rect x="244" y="764" width="300" height="156" fill="#060606" stroke="#FFFFFF" stroke-opacity="0.24"/>
+  <rect x="1376" y="164" width="300" height="156" fill="#060606" stroke="#FFFFFF" stroke-opacity="0.24"/>
+
+  <text x="272" y="818" fill="#FFFFFF" fill-opacity="0.76" font-size="26" font-family="Arial, Helvetica, sans-serif" letter-spacing="1.4">LIGHT PROFILE</text>
+  <text x="272" y="862" fill="#D9D9D9" fill-opacity="0.66" font-size="20" font-family="Arial, Helvetica, sans-serif">Adaptive ambient modulation</text>
+
+  <text x="1404" y="218" fill="#FFFFFF" fill-opacity="0.76" font-size="26" font-family="Arial, Helvetica, sans-serif" letter-spacing="1.4">AI OBJET</text>
+  <text x="1404" y="262" fill="#D9D9D9" fill-opacity="0.66" font-size="20" font-family="Arial, Helvetica, sans-serif">Context-aware sensory object</text>
+
+  <circle cx="214" cy="142" r="4" fill="#FFFFFF" fill-opacity="0.56"/>
+  <circle cx="226" cy="142" r="4" fill="#FFFFFF" fill-opacity="0.36"/>
+  <circle cx="238" cy="142" r="4" fill="#FFFFFF" fill-opacity="0.2"/>
+</svg>

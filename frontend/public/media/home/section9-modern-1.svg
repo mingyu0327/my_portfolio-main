@@ -1,0 +1,30 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1920" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050505"/>
+      <stop offset="1" stop-color="#161616"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 820) rotate(-18) scale(620 360)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#0B0B0B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+  <g opacity="0.28">
+    <line x1="120" y1="148" x2="1800" y2="148" stroke="#FFFFFF" stroke-opacity="0.2"/>
+    <line x1="120" y1="932" x2="1800" y2="932" stroke="#FFFFFF" stroke-opacity="0.2"/>
+    <line x1="120" y1="540" x2="1800" y2="540" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  </g>
+  <rect x="244" y="214" width="1432" height="652" fill="#080808" stroke="#FFFFFF" stroke-opacity="0.2"/>
+  <rect x="356" y="330" width="520" height="420" fill="#0B0B0B" stroke="#FFFFFF" stroke-opacity="0.3"/>
+  <rect x="928" y="330" width="636" height="420" fill="#0B0B0B" stroke="#FFFFFF" stroke-opacity="0.24"/>
+  <rect x="410" y="388" width="412" height="14" rx="7" fill="#FFFFFF" fill-opacity="0.45"/>
+  <rect x="410" y="426" width="320" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.22"/>
+  <rect x="410" y="452" width="352" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.22"/>
+  <rect x="410" y="478" width="286" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.22"/>
+  <path d="M950 622C1024 546 1112 520 1188 530C1264 540 1332 582 1430 570C1488 562 1520 540 1548 514" stroke="#FFFFFF" stroke-opacity="0.44" stroke-width="3"/>
+  <path d="M950 664C1024 588 1112 562 1188 572C1264 582 1332 624 1430 612C1488 604 1520 582 1548 556" stroke="#FFFFFF" stroke-opacity="0.22" stroke-width="3"/>
+  <text x="356" y="182" fill="#FFFFFF" fill-opacity="0.78" font-size="34" font-family="Arial, Helvetica, sans-serif" letter-spacing="1.6">FOCUS STREAM</text>
+  <text x="356" y="218" fill="#D6D6D6" fill-opacity="0.64" font-size="22" font-family="Arial, Helvetica, sans-serif">몰입 흐름을 끊김 없이 이어주는 시각 레이어</text>
+</svg>
