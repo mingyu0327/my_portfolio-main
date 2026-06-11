@@ -2,7 +2,6 @@ package com.portfolio.backend.config;
 
 import com.portfolio.backend.config.jwt.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -32,8 +31,7 @@ public class SecurityConfig {
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
     private final UserDetailsService userDetailsService;
 
-    @Value("${cors.allowed-origins}")
-    private String allowedOrigins;
+    // @Value 어노테이션 삭제 (에러 방지)
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -43,7 +41,8 @@ public class SecurityConfig {
             .sessionManagement(session ->
                 session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/api/auth/login", "/api/auth/signup", "/api/auth/refresh").permitAll()
+                // 프론트엔드가 /auth/signup 으로 보낼 수도 있고 /api/auth/signup 으로 보낼 수도 있으니 둘 다 열어둡니다!
+                .requestMatchers("/api/auth/login", "/api/auth/signup", "/api/auth/refresh", "/auth/login", "/auth/signup").permitAll()
                 .anyRequest().authenticated()
             )
             .authenticationProvider(authenticationProvider())
@@ -74,7 +73,12 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of(allowedOrigins));
+        // 여기에 허용할 Vercel 주소와 로컬 주소를 직접 명시합니다.
+        config.setAllowedOrigins(List.of(
+                "https://my-portfolio-main-swart.vercel.app", 
+                "http://localhost:5173", 
+                "http://localhost:3000"
+        ));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
