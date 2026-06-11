@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Github, Mail, Plus, LogOut, Moon, Sun, UserCircle,
   Trash2, Edit3, AlignLeft, AlignCenter, AlignRight,
-  ChevronUp, ChevronDown, Briefcase, Award, Code2,
+  ChevronUp, ChevronDown, Briefcase, Code2,
   FolderOpen, Trophy, ExternalLink, Eye, Pencil, Save, Smile
 } from 'lucide-react';
 

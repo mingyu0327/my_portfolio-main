@@ -1,0 +1,4 @@
+
+> portfolio-frontend@0.1.0 build
+> node --no-deprecation node_modules/react-scripts/scripts/build.js
+
